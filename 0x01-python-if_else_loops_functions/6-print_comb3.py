@@ -4,4 +4,4 @@ for number in range(10):
         print("{}".format(str(number) + str(num)), end="")
         if int(str(number) + str(num)) < 89:
             print(", ", end="")
-print(" ")
+print("")
