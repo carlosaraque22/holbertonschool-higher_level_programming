@@ -3,4 +3,5 @@ if __name__ == "__main__":
     import hidden_4
     names = dir(hidden_4)
     for listnames in names:
-        print("{}".format(listnames))
+        if listnames[0] != "_":
+            print("{}".format(listnames))
