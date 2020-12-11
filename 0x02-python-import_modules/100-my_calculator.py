@@ -13,6 +13,6 @@ if __name__ == "__main__":
           if argv[2] == op:
                print("{} {} {} = {}".format(a, op, b, functions[i](a, b)))
                break
-          else:
-               print("Unknown operator. Available operators: +, -, * and /")
-               quit(1)
+     else:
+          print("Unknown operator. Available operators: +, -, * and /")
+          quit(1)
