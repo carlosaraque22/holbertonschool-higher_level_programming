@@ -6,4 +6,4 @@ def multiple_returns(sentence):
         t.append(None)
     else:
         t.append(sentence[0])
-        return (t)
+    return (t)
