@@ -1,0 +1,26 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+
+>>> text_indentation("hello:world?")
+hello:
+<BLANKLINE>
+world?
+<BLANKLINE>
+
+
+>>> text_indentation(42)
+Traceback (most recent call last):
+	  ...
+TypeError: text must be a string
+
+
+>>> text_indentation("hello")
+hello
+
+
+>>> text_indentation("emna.bhadj.messaoud")
+emna.
+<BLANKLINE>
+bhadj.
+<BLANKLINE>
+messaoud
