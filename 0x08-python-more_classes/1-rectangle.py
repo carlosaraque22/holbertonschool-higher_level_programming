@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Write a class Rectangle that defines a rectangle by prior ej"""
+
+
 class Rectangle:
     def __init__(self, width=0, height=0):
         self.width = width
