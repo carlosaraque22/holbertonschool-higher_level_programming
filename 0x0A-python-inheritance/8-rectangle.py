@@ -1,22 +1,15 @@
 #!/usr/bin/python3
-"""
-Project: 0x0A-python-inheritance.
-Task: 8
-"""
+"""Module with BaseGeometry class"""
 
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """
-    New class Rectangle that inherits from BaseGeometry (7-base_geometry.py).
-    """
+    """"Representation of a rectangule"""
     def __init__(self, width, height):
-        """
-        Constructor
-        """
-        super().integer_validator("width", width)
-        super().integer_validator("height", height)
+        """Instantiation of a rectangle"""
+        self.integer_validator("width", width)
         self.__width = width
+        self.integer_validator("height", height)
         self.__height = height
