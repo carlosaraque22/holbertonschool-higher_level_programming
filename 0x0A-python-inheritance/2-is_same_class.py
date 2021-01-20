@@ -1,15 +1,9 @@
 #!/usr/bin/python3
-"""
-Project: 0x0A-python-inheritance
-Task: 2
-"""
+
+"""checks if an object is exactly an instance of the specified class"""
 
 
 def is_same_class(obj, a_class):
-     """True if it is an instance,
+     """ True if it is an instance,
      False otherwise"""
-
-     if type(obj) is a_class:
-          return True
-     else:
-          return False
+     return type(obj) == a_class
