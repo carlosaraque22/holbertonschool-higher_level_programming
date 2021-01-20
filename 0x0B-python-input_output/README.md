@@ -1,1 +1,0 @@
-Project 0x0B of python, in my learning process of programming in Holberton
