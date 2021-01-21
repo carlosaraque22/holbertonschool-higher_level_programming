@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Class description and import JSON """
+""" Class description """
 
 
 def class_to_json(obj):
