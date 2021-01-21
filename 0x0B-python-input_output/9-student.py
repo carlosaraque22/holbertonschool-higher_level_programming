@@ -15,6 +15,6 @@ def __init__(self, first_name, last_name, age):
     self.age = age
 
 
-def to_json_string(self):
+def to_json(self):
     """ Return a dictionary of student """
     return self.__dict__
