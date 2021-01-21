@@ -1,0 +1,1 @@
+This is the directory where i'm going to learn about input and output in python
