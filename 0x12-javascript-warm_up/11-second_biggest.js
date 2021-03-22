@@ -1,15 +1,12 @@
 #!/usr/bin/node
-let args = process.argv.splice(0, 2);
-args = args.sort;
-if (args.length <= 0) {
-  console.log(0);
-}
-let i;
-let ii;
-for (i = 0; i < args; i++) {
-  for (ii = 0; ii < args; ii++) {
-    if (args[i] < args[ii]) {
-      console.log(args[i]);
-    }
+if (process.argv.length === 2 || process.argv.length === 3) {
+  console.log('0');
+} else {
+  const nums = process.argv.slice(2);
+  const arrnums = [];
+  for (let i = 0; i < nums.length; i++) {
+    arrnums.push(parseInt(nums[i]));
   }
+  arrnums.sort(function (a, b) { return a - b; });
+  console.log(arrnums[arrnums.length - 2]);
 }
