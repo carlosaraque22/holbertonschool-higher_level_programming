@@ -2,10 +2,13 @@
 const Parent = require('./5-square');
 class Square extends Parent {
   charPrint (c) {
+    if (c === undefined) {
+      c = 'X';
+    }
     let rectangle = '';
     for (let i = 0; i < this.height; i++) {
       for (let j = 0; j < this.width; j++) {
-        rectangle += c !== undefined ? c : 'X';
+        rectangle += c;
       }
       if (i < this.height - 1) {
         rectangle += '\n';
